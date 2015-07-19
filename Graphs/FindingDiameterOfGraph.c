@@ -6,7 +6,7 @@ int adj[MAX][MAX]={0};
 int depth[MAX];
 int visited[MAX];
 
-int getDepth(int node,int V)
+void getDepth(int node,int V)
 {
     //printf("%d ",node);
     int i;
@@ -24,7 +24,7 @@ int getDepth(int node,int V)
     }
     if(count==0)
     {
-        return 1;
+        return;
     }
 }
 
